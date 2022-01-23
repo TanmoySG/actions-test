@@ -44,10 +44,10 @@ jobs:
           git commit -am "Bumped Version Up"
           git push
   
-  test:
-    runs-on: ubuntu-latest
+#   test:
+#     runs-on: ubuntu-latest
     
-    steps:
-      - name: Echo Message
-      - run:
-          echo "Bumped and Published"
+#     steps:
+#       - name: Echo Message
+#       - run:
+#           echo "Bumped and Published"
