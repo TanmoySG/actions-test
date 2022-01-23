@@ -45,6 +45,7 @@ jobs:
           git push
   
   test:
+    needs: build
     runs-on: ubuntu-latest
     
     steps:
