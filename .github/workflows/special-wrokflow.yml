@@ -16,6 +16,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
+    if: contains(github.event.head_commit.message, 'Bump and Publish')
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -28,6 +29,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Setup Python
+        if: contains(github.event.head_commit.message, 'Bump and Publish')
         uses: actions/setup-python@v2.3.1
         with:
           python-version: 3.7
