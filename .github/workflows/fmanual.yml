@@ -21,4 +21,7 @@ jobs:
     - shell: bash
 #       env:
 #         NAME: ${{secrets.MY_NAME}}
-      run: echo "Hello ${{secrets.MY_NAME}}"
+      run: |
+        echo "Hello ${{secrets.MY_NAME}}" >> test.txt
+        cat test.txt
+      
