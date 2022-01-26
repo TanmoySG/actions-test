@@ -19,7 +19,6 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - shell: bash
-      env:
-        NAME: ${{secrets.MY_NAME}}
-        LSTNM: ${{env.DEV.MY_NAME_LAST}}
-      run: echo "Hello $LSTNM"
+#       env:
+#         NAME: ${{secrets.MY_NAME}}
+      run: echo "Hello ${{secrets.MY_NAME}}"
