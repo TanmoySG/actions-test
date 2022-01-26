@@ -21,5 +21,5 @@ jobs:
     - shell: bash
       env:
         NAME: ${{secrets.MY_NAME}}
-        LSTNM: ${{env.MY_NAME_LAST}}
+        LSTNM: ${{env.DEV.MY_NAME_LAST}}
       run: echo "Hello $LSTNM"
